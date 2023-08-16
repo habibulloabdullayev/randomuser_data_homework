@@ -8,5 +8,8 @@ def get_count_users(data:dict) -> int:
         data(dict): data
     Returns:
         int: number of users
+
     """
+    return len(data['results'])
+print(get_count_users(get_data.get_data('randomuser_data.json')))
     
